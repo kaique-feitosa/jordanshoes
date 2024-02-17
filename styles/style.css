@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --azul: #7CA2F4;
+    --azul-claro: #F3F7FF;
+    --cinza-escuro: #121214;
+    --branco: #FFFFFF;
+
+    --fonte-principal: "Archivo", sans-serif;
+    --fonte-secundaria: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-principal);
+    overflow-x: hidden;
+}
+
+
+.header__banner {
+    background-color: var(--azul-claro);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-image: url(../assets/image-mj-celular.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--branco);
+    width: 100vw;
+    height: 350px;
+}
+
+.content__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 1.5em;
+}
+
+.logo__image {
+    width: 1.5em;
+}
+
+.logo__text {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.content__container {
+    margin: 0 1.5em;
+}
+
+.content__title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+.content__text {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 22.4px;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.store__desc {
+    text-align: center;
+}
+
+.desc__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 3em;
+}
+
+.desc__text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 19.6px;
+    padding: 1em 0;
+}
+
+.store__products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    margin-top: 2em;
+}
+
+.product__image {
+    position: relative;
+    background-color: var(--azul-claro);
+    width: 19.9em;
+    height: 12.5em;
+}
+
+.product__image img {
+    position: absolute;
+    top: 2em;
+    left: 2.5em;
+}
+
+.product__desc {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    width: 19.9em;
+}
+
+.product__desc a {
+    text-decoration: none;
+}
+
+.desc__name {
+    color: var(--cinza-escuro);
+    font-size: 1rem;
+    padding-top: 2em;
+}
+
+.desc__style {
+    color: var(--azul);
+    padding-top: 1em;
+}
+
+.desc__price {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;
+    padding: 1.5em 0 1em 0;
+}

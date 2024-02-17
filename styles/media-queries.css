@@ -1,0 +1,160 @@
+@media screen and (min-width: 768px) {
+    .header__banner {
+        font-size: 1rem;
+    }
+
+    .header__content {
+        background-image: url('../assets/image-mj-tablet.svg');
+    }
+
+    .content__logo {
+        margin-left: 2em;
+    }
+
+    .content__container {
+        margin: 0 2em;
+    }
+
+    .content__text {
+        width: 55%;
+    }
+
+    .store__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc__title {
+        font-size: 1.5rem;
+        margin-top: 2em;
+    }
+
+    .desc__text {
+        font-size: 1rem;
+    }
+
+    .store__products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+    }
+
+    .product__image {
+        width: 21em;
+    }
+    
+    .product__image img {
+        left: 3em;
+    }
+
+    .desc__name {
+        font-size: 1.125rem;
+    }
+}
+
+/* No figma não existe o tamanho px fiz por conta própria */
+@media screen and (min-width: 1200px) {
+    .content__logo {
+        margin-left: 5em;
+    }
+
+    .logo__image {
+        width: 2em;
+    }
+
+    .logo__text {
+        font-size: 1.25rem;
+    }
+
+    .content__container {
+        margin: 0 5em;
+    }
+
+    .content__text {
+        width: 45%;
+    }
+
+    .desc__text {
+        width: 55%;
+    }
+
+    .store__products {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+
+    /* HOVER */
+    .product__image img:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+
+    .desc__style:hover {
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .header__banner {
+        font-size: 1.5rem;
+        padding: 1em 0;
+    }
+
+    .header__content {
+        background-image: url('../assets/image-mj-desktop.svg');
+        background-size: cover;
+        height: 400px;
+    }
+
+    .content__logo {
+        margin-left: 22em;
+    }
+
+    .logo__image {
+        width: 2.4em;
+    }
+
+    .logo__text {
+        font-size: 1.5rem;
+    }
+
+    .content__container {
+        margin: 0 22em;
+    }
+
+    .content__title {
+        font-size: 2rem;
+    }
+
+    .content__text {
+        font-size: 1.5rem;
+        width: 42%;
+        line-height: 33.6px;
+    }
+
+    .desc__title {
+        font-size: 2rem;
+    }
+
+    .desc__text {
+        font-size: 1.5rem;
+        line-height: 33.6px;
+        padding: 1.5em 0;
+        width: 55%;
+    }
+
+    .store__products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product__image {
+        width: 24em;
+    }
+
+    .product__image img {
+        left: 5em;
+    }
+}
